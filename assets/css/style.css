@@ -381,6 +381,136 @@ h2 {
   color: #e4ede2;
   font-size: 18px;
 }
+.farm-stats {
+  background: #173c2a;
+  padding: 70px 20px;
+}
+
+.farm-stats__container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.farm-stats__heading {
+  margin-bottom: 45px;
+}
+
+.farm-stats__eyebrow {
+  display: block;
+  color: #e9a825;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.farm-stats__heading h2 {
+  color: #fff;
+  font-size: 42px;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.farm-stats__items {
+  display: flex;
+  align-items: center;
+}
+
+.farm-stats__item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.farm-stats__number {
+  color: #f2b332;
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.farm-stats__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.farm-stats__unit {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.farm-stats__content p {
+  color: #c9d3cd;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.farm-stats__divider {
+  width: 1px;
+  height: 85px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0 70px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .farm-stats {
+    padding: 55px 25px;
+  }
+
+  .farm-stats__heading h2 {
+    font-size: 34px;
+  }
+
+  .farm-stats__number {
+    font-size: 48px;
+  }
+
+  .farm-stats__divider {
+    margin: 0 35px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .farm-stats {
+    padding: 45px 20px;
+  }
+
+  .farm-stats__heading {
+    margin-bottom: 30px;
+  }
+
+  .farm-stats__heading h2 {
+    font-size: 30px;
+  }
+
+  .farm-stats__items {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  .farm-stats__item {
+    gap: 20px;
+  }
+
+  .farm-stats__number {
+    min-width: 120px;
+    font-size: 44px;
+  }
+
+  .farm-stats__divider {
+    width: 100%;
+    height: 1px;
+    margin: 0;
+  }
+}
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
