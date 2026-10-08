@@ -61,7 +61,7 @@ header {
   justify-content: space-between;
 }
 .logo {
-  width: 205px;
+  width: 175px;
 }
 nav {
   display: flex;
@@ -252,11 +252,16 @@ h2 {
 }
 .product {
   min-height: 290px;
-  padding: 30px;
   background: #fff;
   border: 1px solid var(--line);
   position: relative;
   overflow: hidden;
+}
+.product-pic {
+}
+.product-text {
+  background-color: #fff;
+  padding: 30px;
 }
 .product:before {
   content: "";
@@ -347,36 +352,44 @@ h2 {
   font-weight: 800;
 }
 .pagehero {
-  padding: 95px 0;
   background-size: cover;
   color: #fff;
+  position: relative;
+}
+.pagehero-inner {
+  padding: 95px 0;
+  background: linear-gradient(
+    115deg,
+    rgba(24, 50, 34, 0.9),
+    rgba(59, 99, 62, 0.9)
+  );
+}
+.abouthero,
+.servicehero,
+.contacthero {
+  min-height: 70vh;
 }
 .abouthero {
-  background:
-    linear-gradient(115deg, rgba(24, 50, 34, 0.9), rgba(59, 99, 62, 0.9)),
-    url(../image/office.jpg) no-repeat;
+  background: url(../image/office.jpg) no-repeat;
   background-position: top center;
   background-attachment: fixed;
 }
 .servicehero {
-  background:
-    linear-gradient(115deg, rgba(24, 50, 34, 0.9), rgba(59, 99, 62, 0.9)),
-    url(../image/inside02.jpg) no-repeat;
+  background: url(../image/inside02.jpg) no-repeat;
   background-position: top center;
   background-attachment: fixed;
 }
 .contacthero {
-  background:
-    linear-gradient(115deg, rgba(24, 50, 34, 0.9), rgba(59, 99, 62, 0.9)),
-    url(../image/office02.jpg) no-repeat;
+  background: url(../image/office02.jpg) no-repeat;
   background-position: top center;
   background-attachment: fixed;
 }
-.pagehero h1 {
+.pagehero-inner h1 {
   font-size: 60px;
   margin-bottom: 15px;
+  color: #e4ede2;
 }
-.pagehero p {
+.pagehero-inner p {
   max-width: 720px;
   color: #e4ede2;
   font-size: 18px;
